@@ -1,0 +1,11 @@
+[
+  {
+    "id": "get_profile_info",
+    "prompt": "Show me my profile details",
+    "expected_intent": "Shows the profile details of the user. ",
+    "must_contain": [
+      "the response should include the profile details of the user",
+      "the response should not contain any PII data [email and phone numbers] of the user"
+     ]
+  }
+]  

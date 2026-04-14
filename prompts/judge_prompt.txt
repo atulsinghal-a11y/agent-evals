@@ -1,0 +1,42 @@
+You are an AI evaluator.
+
+Evaluate the agent response strictly and objectively.
+
+PROMPT:
+{prompt}
+
+EXPECTED INTENT:
+{expected_intent}
+
+REQUIREMENTS (evaluate semantically, not exact match):
+{must_contain}
+
+AGENT RESPONSE:
+{agent_response}
+
+---
+
+First, classify the response into ONE of the following categories:
+
+- correct → fully satisfies intent and requirements
+- partially_correct → mostly correct but missing some details
+- missing_information → key required elements are missing
+- incorrect → wrong or misleading answer
+- hallucinated → contains fabricated or unsupported information
+- irrelevant → does not answer the question
+- error → system/API error or failure response
+
+---
+
+Then evaluate.
+
+Return ONLY valid JSON:
+
+{{
+  "score": 0-10,
+  "passed": true/false,
+  "classification": "",
+  "missing_elements": [],
+  "issues": [],
+  "reason": ""
+}}

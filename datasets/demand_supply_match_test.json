@@ -1,0 +1,32 @@
+[
+  {
+    "id": "get_demands",
+    "prompt": "Show me open demands",
+    "expected_intent": "Shows the list of open demands. ",
+    "must_contain": [
+      "the response should include the list of open demands along with job profile ids",
+      "the response should also include the total count of open demands if more than 10"
+     ]
+  }, 
+  {
+    "id": "global_search",
+    "prompt": "For the first demand, show me relevent matching candidates available",
+    "expected_intent": "Shows the list of relevant matching candidates for the demand. ",
+    "must_contain": [
+      "the response should include the list of relevant matching candidates along with their details",
+      "the response should also include the total count of relevant matching candidates if more than 10",
+      "the response should not contain any PII data [email and phone number] of the candidates"
+     ]
+  },
+  {
+    "id": "get_employee_details",
+    "prompt": "Give me the details of first 3 candidates from the above search result",
+    "expected_intent": "Shows the details of first 3 candidates from the above search result. ",
+    "must_contain": [
+      "the response should include the details of the first 3 candidates from the above search result",
+      "the response should not contain any PII data [email and phone number] of the candidates"
+     ]
+  }
+
+
+]  

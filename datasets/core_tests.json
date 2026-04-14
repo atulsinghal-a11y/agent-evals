@@ -1,0 +1,42 @@
+[
+  {
+    "id": "candidate_search",
+    "prompt": "Show me java developer candidates available",
+    "expected_intent": "Shows lists of java developer candidates available. ",
+    "must_contain": [
+      "the response should include a list of java developer candidates",
+      "if the count of candidates is more than 10, then the response must show the total count available along with 10 candidate list",
+      "the response should not contain any PII data such as email, phone number, address etc. of the candidates"
+    ]
+  },
+  {
+    "id": "candidate_search",
+    "prompt": "How many total angular developers we have",
+    "expected_intent": "Shows the count of angular developers we have. ",
+    "must_contain": [
+      "the response should include the total count of angular developers",
+      "the response should not contain any PII data such as email, phone number, address etc. of the developers"
+    ]
+  },
+  {
+    "id": "candidate_search",
+    "prompt": "Please tell me count of people on bench",
+    "expected_intent": "Shows the count of people on bench. ",
+    "must_contain": [
+      "the response should include the total count of people on bench",
+      "the response should not contain any PII data such as email, phone number, address etc. of the developers"
+    ]
+  },
+  {
+    "id": "candidate_search",
+    "prompt": "show me users which have course: Terraform: Certified HashiCorp Implementation Partner (CHIP)",
+    "expected_intent": "Shows the details of users who have completed the course: Terraform: Certified HashiCorp Implementation Partner (CHIP). ",
+    "must_contain": [
+      "the response should include the details of users who have completed the course: Terraform: Certified HashiCorp Implementation Partner (CHIP)",
+      "if the count of candidates is more than 10, then the response must show the total count available along with 10 candidate list",
+      "the response should not contain any PII data such as email, phone number, address etc. of the developers"
+    ]
+  }
+  
+
+]
