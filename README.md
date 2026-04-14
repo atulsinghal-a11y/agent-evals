@@ -2,4 +2,4 @@
 
 Run evaluations:
 
-python runners/run_evals.py
+python -m runners.run_evals
