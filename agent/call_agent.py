@@ -22,7 +22,7 @@ def create_thread():
 
     payload = {
         "metadata": {
-            "source": "guardrail_test",
+            "source": "agent_test",
             "testdata": "auto"
         }
     }
