@@ -1,0 +1,11 @@
+[
+    {
+    "id": "greeting",
+    "prompt": "How are you?",
+    "expected_intent": "the agent replies with hi/ hello and ask for how it can help",
+    "must_contain": [
+      "the response should include hi/ hello and ask for how it can help",
+      "the response should not contain any foul language and should be professional in nature"
+     ]
+  }
+]

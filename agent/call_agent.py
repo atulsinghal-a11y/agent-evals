@@ -6,13 +6,13 @@ import ast
 
 load_dotenv()
 
-BASE_URL = "http://sit-prism-agent-service.dev.prismforce.local:8080"
+BASE_URL = os.getenv("BASE_URL", "http://nv-prism-agent-service.dev.prismforce.local:8080")
 
 HEADERS = {
-    "x-client-id": "e8954980-e9c3-4100-a6e2-34480fe04779",
-    "x-user-role": "RMGR",
-    "x-user-id": "e39daa38-2782-4b00-875d-2a26dde6f2b7",
-    "x-api-key": "prism_service_call_key_12345",
+    "x-client-id": os.getenv("X_CLIENT_ID"),
+    "x-user-role": os.getenv("X_USER_ROLE"),
+    "x-user-id": os.getenv("X_USER_ID"),
+    "x-api-key": os.getenv("X_API_KEY"),
     "Content-Type": "application/json"
 }
 
@@ -22,7 +22,7 @@ def create_thread():
 
     payload = {
         "metadata": {
-            "source": "eval_script",
+            "source": "guardrail_test",
             "testdata": "auto"
         }
     }

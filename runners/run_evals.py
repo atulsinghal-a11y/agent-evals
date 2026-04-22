@@ -10,7 +10,7 @@ from evaluators.judge_llm import judge
 def run():
     thread_id = create_thread()
     print(f"Using thread: {thread_id}")
-    tests = load_json("datasets/demand_supply_match_test.json")
+    tests = load_json("datasets/skill_prism_tests.json")
     results = []
 
     for test in tests:

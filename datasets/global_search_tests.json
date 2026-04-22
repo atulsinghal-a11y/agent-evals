@@ -36,7 +36,19 @@
       "if the count of candidates is more than 10, then the response must show the total count available along with 10 candidate list",
       "the response should not contain any PII data such as email, phone number, address etc. of the developers"
     ]
+  },
+
+  {
+    "id": "candidate_search",
+    "prompt": "show me candidates which are from CAN",
+    "expected_intent": "Shows the details of candidates who are from Canada. It should contain total count of users along with 5-10 candidate details ",
+    "must_contain": [
+      "the response should include the details of candidates who are from Canada",
+      "it should also include the total count of candidates who are from Canada",
+      "the response should not contain any PII data such as email, phone number, address etc. of the developers"
+    ]
   }
+
   
 
 ]
